@@ -7,7 +7,7 @@ pipeline{
     }
 
     environment{
-        GIT_REPO = 'https://github.com/vinayakakg7/DevopsIntegration.git'
+        GIT_REPO = 'https://github.com/vinayakakg7/springboot.git'
         GIT_BRANCH = 'main'
         DOCKER_NAMESPACE = "vinayakakg7"
     }
