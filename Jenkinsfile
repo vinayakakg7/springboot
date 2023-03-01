@@ -70,7 +70,7 @@ pipeline{
       stage('Deploy to Minikube') {
             steps {
                 // Apply the Kubernetes YAML file
-                bat "kubectl apply -f . deploymentservice.yml"
+                bat "kubectl apply -f deploymentservice.yml"
                 
             }
         }
