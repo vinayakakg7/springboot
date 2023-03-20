@@ -28,7 +28,8 @@ pipeline{
       steps{
         script{
 				def imageTag = "${DOCKER_NAMESPACE}/${env.JOB_NAME}:${env.BUILD_ID}"
-                bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:13"
+                 bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:12"
+                bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:14"
 				bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:V1"
 				bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:latest"
 				}
