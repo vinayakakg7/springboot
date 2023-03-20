@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s
-          image: vinayakakg7/devops_demo # Image that will be used to containers in the cluster
+          image: vinayakakg7/k8sdemo1 # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000 # The port that the container is running on in the cluster
