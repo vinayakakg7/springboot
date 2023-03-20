@@ -24,17 +24,17 @@ pipeline{
         }
    
 
-	stage('Remove Docker images'){
-      steps{
-        script{
-				def imageTag = "${DOCKER_NAMESPACE}/${env.JOB_NAME}:${env.BUILD_ID}"
+//	stage('Remove Docker images'){
+//      steps{
+ //       script{
+//				def imageTag = "${DOCKER_NAMESPACE}/${env.JOB_NAME}:${env.BUILD_ID}"
             //     bat "docker rmi -f ${DOCKER_NAMESPACE}/${env.JOB_NAME}:12"
-                bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:16"
-				bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:V1"
-				bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:latest"
-				}
-			}
-		}
+               // bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:16"
+//				bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:V1"
+//				bat "docker rmi ${DOCKER_NAMESPACE}/${env.JOB_NAME}:latest"
+//				}
+//			}
+//		}
     stage('Docker image build'){
       steps{
         script{
